@@ -66,18 +66,33 @@
     }
     a:hover::after { opacity: 1; transform: translate(0, 0); }
     .place { font-weight: 600; }
+    .edu {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .date {
+      flex-shrink: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
     .note { display: block; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
 <body>
   <h1>Curtis Ly</h1>
-  <p class="bio">Electrical Engineer passionate about aerospace autonomy and robotics.</p>
+  <p class="bio">Electrical Engineer passionate about autonomy and aerospace.</p>
 
   <h2>Degrees of freedom</h2>
   <ul>
-    <li>
-      <span class="place">University of California, Riverside</span>
-      <span class="note">B.S. Electrical Engineering &mdash; Concentration: Embedded Systems</span>
+    <li class="edu">
+      <div>
+        <span class="place">University of California, Riverside</span>
+        <span class="note">B.S. Electrical Engineering &mdash; Concentration: Embedded Systems</span>
+      </div>
+      <span class="date">Sep 2021 &ndash; Jun 2025</span>
     </li>
   </ul>
 
